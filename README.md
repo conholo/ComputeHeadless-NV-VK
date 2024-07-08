@@ -55,13 +55,13 @@ The program will process all supported image files (PNG, JPG, JPEG, BMP) in the 
    ```bash
        ./nv_image_enhancer  media/images 75.5
    ```
-This command will process all images in the `/path/to/your/images` directory with a sharpness level of 75.5.
+This command will process all images in the example `media/images` directory with a sharpness level of 75.5.  These images are provided in [NVIDIA's GitHub repository](https://github.com/NVIDIAGameWorks/NVIDIAImageScaling).
 
 
 ## Output
 
 Processed images will be saved in the `output` directory created in the same location as the executable. Each output image will be named in the format:
-   ```bash
+   ```
      original_filename_NVSharpened_XX.XX%.png
    ```
 Where `XX.XX` represents the sharpness level used.
