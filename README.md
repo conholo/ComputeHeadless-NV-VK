@@ -33,13 +33,17 @@ NV Image Sharpener is a lightweight, headless Vulkan compute application that im
     cmake ..
     make
     ```
+4. Navigate to the program binary: 
+   ```bash
+   cd ../bin/nv_image_enhancer
+   ```
 
 ## Usage
 
 After building the project, you can run the NV Image Sharpener using the following command:
-```bash
-    ./nv_image_enhancer <input_directory> [sharpness]
-```
+   ```bash
+       ./nv_image_enhancer <input_directory> [sharpness]
+   ```
 - `<input_directory>`: Path to the directory containing the images you want to process.
 - `[sharpness]`: (Optional) Sharpness level, a value between 0 and 100. Default is 100% if not specified.
 
@@ -47,18 +51,19 @@ The program will process all supported image files (PNG, JPG, JPEG, BMP) in the 
 
 
 ### Example
-```bash
-    ./nv_image_enhancer  /path/to/your/images 75.5
-```
+
+   ```bash
+       ./nv_image_enhancer  /path/to/your/images 75.5
+   ```
 This command will process all images in the `/path/to/your/images` directory with a sharpness level of 75.5.
 
 
 ## Output
 
 Processed images will be saved in the `output` directory created in the same location as the executable. Each output image will be named in the format:
-```bash
-  original_filename_NVSharpened_XX.XX%.png
-```
+   ```bash
+     original_filename_NVSharpened_XX.XX%.png
+   ```
 Where `XX.XX` represents the sharpness level used.
 
 
