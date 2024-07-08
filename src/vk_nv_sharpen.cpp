@@ -4,6 +4,7 @@
 #include "vulkan/vulkan_utils.h"
 #include <map>
 #include <filesystem>
+#include <cstring>
 
 VkNVSharpen::VkNVSharpen()
 {

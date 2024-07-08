@@ -2,6 +2,7 @@
 
 #include <cassert>
 #include <ostream>
+#include <cstring>
 
 VkDeviceSize VulkanBuffer::GetAlignment(VkDeviceSize instanceSize, VkDeviceSize minOffsetAlignment)
 {
