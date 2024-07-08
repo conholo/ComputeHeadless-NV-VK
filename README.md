@@ -5,9 +5,16 @@ NV Image Sharpener is a lightweight, headless Vulkan compute application that im
 
 ## Example
 
-| Input Image | Output Image (Sharpness: 100%)            |
-|-------------|-------------------------------------------|
-| ![Input Image](media/images/orangutan.png) | ![Output Image](example_output/orangutan_NVSharpened_100%.png) |
+<table>
+  <tr>
+    <th>Input Image</th>
+    <th>Output Image</th>
+  </tr>
+  <tr>
+    <td><img src="docs/images/orangutan.png" width="400" alt="Input Image"></td>
+    <td><img src="docs/images/orangutan_NVSharpened_100%.png" width="400" alt="Output Image"></td>
+  </tr>
+</table>
 
 *Note: The output image demonstrates the sharpening effect with a sharpness level of 100%.*
 
