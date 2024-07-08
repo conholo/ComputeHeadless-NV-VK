@@ -196,8 +196,6 @@ void VulkanDevice::CreateInstance()
     {
         throw std::runtime_error("Failed to create instance!");
     }
-
-    HasGLFWRequiredInstanceExtensions();
 }
 
 void VulkanDevice::SelectPhysicalDevice()

@@ -60,7 +60,11 @@ private:
 
     std::optional<uint32_t> m_ComputeFamily;
     VkDescriptorPool m_DescriptorPool;
+#ifdef VULKAN_DEBUG
     bool m_EnableValidationLayers = true;
+#else
+    bool m_EnableValidationLayers = false;
+#endif
     VkInstance m_Instance{};
     VkDebugUtilsMessengerEXT m_DebugMessenger{};
     VkPhysicalDevice m_PhysicalDevice = VK_NULL_HANDLE;
@@ -73,10 +77,6 @@ private:
     VkQueue m_PresentQueue{};
     VkQueue m_ComputeQueue{};
 
-    const std::vector<const char *> m_ValidationLayers = {
-            "VK_LAYER_KHRONOS_validation",
-    };
-
-    const std::vector<const char *> m_DeviceExtensions = {
-    };
+    const std::vector<const char *> m_ValidationLayers = {"VK_LAYER_KHRONOS_validation"};
+    const std::vector<const char *> m_DeviceExtensions = {};
 };
