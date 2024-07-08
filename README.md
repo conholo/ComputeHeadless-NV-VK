@@ -2,6 +2,15 @@
 
 NV Image Sharpener is a lightweight, headless Vulkan compute application that implements NVIDIA's Image Scaling algorithm for image sharpening. This tool is designed to process images in bulk, enhancing their sharpness using NVIDIA's scaling tech.
 
+
+## Example
+
+| Input Image | Output Image (Sharpness: 100%)            |
+|-------------|-------------------------------------------|
+| ![Input Image](media/images/orangutan.png) | ![Output Image](example_output/orangutan_NVSharpened_100%.png) |
+
+*Note: The output image demonstrates the sharpening effect with a sharpness level of 100%.*
+
 ## Features
 
 - Utilizes Vulkan compute shaders for efficient image processing
@@ -55,7 +64,7 @@ The program will process all supported image files (PNG, JPG, JPEG, BMP) in the 
    ```bash
        ./nv_image_enhancer  media/images 75.5
    ```
-This command will process all images in the example `media/images` directory with a sharpness level of 75.5.  These images are provided in [NVIDIA's GitHub repository](https://github.com/NVIDIAGameWorks/NVIDIAImageScaling).
+This command will process all images in the example `media/images` directory with a sharpness level of 75.5.
 
 
 ## Output
