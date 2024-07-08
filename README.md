@@ -1,6 +1,6 @@
 # Minimal NVIDIA Image Sharpening Compute Headless
 
-NV Image Sharpener is a lightweight, headless Vulkan compute application that implements NVIDIA's Image Scaling algorithm for image sharpening. This tool is designed to process images in bulk, enhancing their sharpness using NVIDIA's scaling tech.
+NV Image Sharpener is a lightweight, headless Vulkan compute application that implements NVIDIA's Image Scaling algorithm for image sharpening. This tool is designed to process images in bulk, enhancing their sharpness using [NVIDIA's scaling tech](https://github.com/NVIDIAGameWorks/NVIDIAImageScaling).
 
 
 ## Example
