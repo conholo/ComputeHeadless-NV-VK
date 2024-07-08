@@ -53,7 +53,7 @@ The program will process all supported image files (PNG, JPG, JPEG, BMP) in the 
 ### Example
 
    ```bash
-       ./nv_image_enhancer  /path/to/your/images 75.5
+       ./nv_image_enhancer  media/images 75.5
    ```
 This command will process all images in the `/path/to/your/images` directory with a sharpness level of 75.5.
 
